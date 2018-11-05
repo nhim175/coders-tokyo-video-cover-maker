@@ -1,0 +1,84 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+}
+
+.artboard {
+  width: 960px;
+  height: 540px;
+  overflow: hidden;
+}
+
+.cover {
+  width: 1920px;
+  height: 1080px;
+  background-color: grey;
+  display: flex;
+  font-family: 'Source Sans Pro';
+  font-size: 104px;
+  font-weight: bold;
+  color: white;
+  transform: scale(0.5);
+  transform-origin: 0 0;
+  background-image: url(./video-cover.png);
+  background-position: right center;
+  background-repeat: no-repeat;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 80px;
+  padding-right: 0;
+  position: relative;
+  width: 40%;
+}
+
+input[type=text] {
+  height: 42px;
+  margin-bottom: 16px;
+  padding: 8px;
+  box-sizing: border-box;
+  width: 300px;
+  display: block;
+  border-radius: 4px;
+  border: 2px solid #DDD;
+  font-size: 16px;
+  transition: border 0.3s;
+}
+
+input[type=text]:focus {
+  outline: none;
+  border-color: #be1313;
+  font-size: 16px;
+}
+
+button {
+  height: 42px;
+  display: block;
+  width: 300px;
+  -webkit-appearance: none;
+  margin-bottom: 16px;
+  background-color: #be1313;
+  border-radius: 4px;
+  color: #EEE;
+  font-weight: bold;
+  font-size: 16px;
+  border: none;
+}
+
+button:focus {
+  outline: none;
+}
+
+#subject {
+  font-size: 60px;
+  opacity: .5;
+  position: absolute;
+  bottom: 40px;
+  left: 60px;
+}
